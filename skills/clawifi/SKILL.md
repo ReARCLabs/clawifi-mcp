@@ -32,11 +32,11 @@ Clawifi searches many engines as one, reads pages and PDFs, and returns the pass
 | Balance and plan | `credits`, `account` |
 | Price of a call before running it | `estimate`, or `"dry_run": true` on any paid HTTP call |
 
-Page monitoring (a page checked every 5 minutes, 15 minutes, hour or day, every change kept) is on the HTTP API: `POST /monitors`, then `GET /monitors/{id}/diffs`. `list_monitors` lists them over MCP.
+Monitoring is on the HTTP API. A page monitor checks a page on a schedule, from every 5 minutes to once a month (`include_selectors` limits it to part of the page). A search monitor (`kind: "search"` with `query`) runs a search at most hourly and reports only results it has not seen before. Either can email its creator (`notify_email: true`) or call a signed webhook on change. Price it with `POST /monitors/estimate` (free), create it with `POST /monitors`, then read `GET /monitors/{id}/diffs`. `list_monitors` lists them over MCP. Details: https://clawifi.dev/docs/monitors.md
 
 ## Costs
 
-Most calls cost 1 credit. Asking a question about a page (`query`) adds nothing. A page or search with nothing to read costs 0, and failures on Clawifi's side are free. A page that needs the browser costs 3, and a PDF costs 2 for 1 to 50 pages. A crawl costs 1 per page, and a monitor check costs 1. `research` costs 30 to 300. Every response says what it charged in `X-Clawifi-Credits-Charged`. Full table: https://clawifi.dev/pricing.md
+Most calls cost 1 credit. Asking a question about a page (`query`) adds nothing. A page or search with nothing to read costs 0, and failures on Clawifi's side are free. A page that needs the browser costs 3, and a PDF costs 2 for 1 to 50 pages. A crawl costs 1 per page, and a monitor check costs 1 (3 with the browser). `research` costs 30 to 300. Every response says what it charged in `X-Clawifi-Credits-Charged`. Full table: https://clawifi.dev/pricing.md
 
 ## Rules for agents
 
