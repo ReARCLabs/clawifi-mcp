@@ -25,7 +25,7 @@ Both add the hosted remote server `https://api.clawifi.dev/mcp`. No key to copy:
 npx skills add ReARCLabs/clawifi-mcp
 ```
 
-Installs [`skills/clawifi/SKILL.md`](skills/clawifi/SKILL.md) into your coding agent: when to use Clawifi, which tool fits, and what each call costs. The same file is at [clawifi.dev/agent-onboarding/SKILL.md](https://clawifi.dev/agent-onboarding/SKILL.md).
+Installs [`skills/clawifi/SKILL.md`](skills/clawifi/SKILL.md) into your coding agent: when to use Clawifi, which tool fits, and what each call costs. The same file is at [clawifi.dev/agent-onboarding/skill.md](https://clawifi.dev/agent-onboarding/skill.md).
 
 ## Install
 
