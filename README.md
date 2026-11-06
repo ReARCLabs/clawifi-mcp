@@ -17,7 +17,15 @@ This package is a thin client over the hosted Clawifi API (hosted API version 1.
 [![Add to Cursor](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en/install-mcp?name=clawifi&config=eyJ1cmwiOiJodHRwczovL2FwaS5jbGF3aWZpLmRldi9tY3AifQ%3D%3D)
 [![Install in VS Code](https://img.shields.io/badge/VS_Code-Install_Clawifi-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://insiders.vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522clawifi%2522%252C%2522type%2522%253A%2522http%2522%252C%2522url%2522%253A%2522https%253A%252F%252Fapi.clawifi.dev%252Fmcp%2522%257D)
 
-Both add the hosted remote server `https://api.clawifi.dev/mcp`. No key needed to try: 4 tools, 50 calls a day per address. Add your API key for the full toolset ([get a free key](https://clawifi.dev/signup?utm_source=github&utm_medium=readme&utm_campaign=mcp_install)).
+Both add the hosted remote server `https://api.clawifi.dev/mcp`. No key to copy: the free tools work at once, and your client asks you to sign in (a free account, 1,000 credits a month) when a call needs one. One line for every other client (Claude Code, Codex, Claude, ChatGPT, Hermes): [clawifi.dev/install](https://clawifi.dev/install?utm_source=github&utm_medium=readme&utm_campaign=mcp_install).
+
+## Agent skill
+
+```bash
+npx skills add ReARCLabs/clawifi-mcp
+```
+
+Installs [`skills/clawifi/SKILL.md`](skills/clawifi/SKILL.md) into your coding agent: when to use Clawifi, which tool fits, and what each call costs. The same file is at [clawifi.dev/agent-onboarding/SKILL.md](https://clawifi.dev/agent-onboarding/SKILL.md).
 
 ## Install
 
