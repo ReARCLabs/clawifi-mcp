@@ -1,0 +1,12 @@
+{
+  "name": "clawifi",
+  "version": "0.4.2",
+  "description": "Web search and page reading for AI agents: search many engines as one, read pages and PDFs, and get back the passages that answer the question, each with its source.",
+  "mcpServers": {
+    "clawifi": {
+      "url": "https://api.clawifi.dev/mcp",
+      "type": "http"
+    }
+  },
+  "contextFileName": "GEMINI.md"
+}
