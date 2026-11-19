@@ -10,6 +10,10 @@
 
 Official Python SDK, CLI, and MCP server for [Clawifi](https://clawifi.dev), web search and page reading for AI agents: search many engines as one, read pages and PDFs, map and crawl sites, and get back only the passages that answer the question, each with its source. One typed API and MCP surface for all of it.
 
+<a href="https://datacircle.dev/best-web-search-api/clawifi"><img src="https://datacircle.dev/badge/best-web-search-api/clawifi.svg" alt="Datacircle badge: Clawifi ranked #1, Best Overall, web search API" width="240" height="162"></a>
+
+Ranked #1 by Overall score in [Datacircle's web search API benchmark](https://datacircle.dev/best-web-search-api) since 17 November 2026: first of 99 providers as of 20 November 2026. Datacircle scored Clawifi on 20 of its 98 searches.
+
 This package is a thin client over the hosted Clawifi API (hosted API version 1.12.1 at time of release); the Clawifi server is not included. Docs, pricing and status: [clawifi.dev/docs](https://clawifi.dev/docs) · [clawifi.dev/pricing](https://clawifi.dev/pricing) · [clawifi.dev/status](https://clawifi.dev/status) · [clawifi.dev/security](https://clawifi.dev/security).
 
 ## One-click install (hosted server, no key needed to try)
