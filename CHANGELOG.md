@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.4.2 (2026-11-20)
+
+For hosted API 1.12.1. Dependency floor only, no SDK, CLI or MCP behaviour change.
+
+- `mcp>=1.30.0,<2` (was `>=1.21.1`). Versions before 1.30.0 carry the advisories GHSA-vj7q-gjh5-988w, GHSA-w4fh-qvv9-3v23, GHSA-5h93-6whr-6q8j, GHSA-rwrf-2pqf-9j8j and GHSA-84m7-p3x7-pcfv. 2.x stays out: it removes `mcp.server.fastmcp`.
+- `server.json` and the User-Agent strings: 0.4.2.
+
 ## 0.4.1 (2026-11-10)
 
 For hosted API 1.12.1.
