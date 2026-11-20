@@ -8,7 +8,7 @@
 [![MCP](https://img.shields.io/badge/MCP-server-purple.svg)](https://clawifi.dev/docs)
 [![GitHub stars](https://img.shields.io/github/stars/ReARCLabs/clawifi-mcp?style=flat)](https://github.com/ReARCLabs/clawifi-mcp/stargazers)
 
-Official Python SDK, CLI, and MCP server for [Clawifi](https://clawifi.dev), web search and page reading for AI agents: search many engines as one, read pages and PDFs, map and crawl sites, and get back only the passages that answer the question, each with its source. One typed API and MCP surface for all of it.
+Official Python SDK, CLI, and MCP server for [Clawifi](https://clawifi.dev/?utm_source=github&utm_medium=readme&utm_campaign=clawifi-mcp), web search and page reading for AI agents: search many engines as one, read pages and PDFs, map and crawl sites, and get back only the passages that answer the question, each with its source. One typed API and MCP surface for all of it.
 
 <a href="https://datacircle.dev/best-web-search-api/clawifi"><img src="https://datacircle.dev/badge/best-web-search-api/clawifi.svg" alt="Datacircle badge: Clawifi ranked #1, Best Overall, web search API" width="240" height="162"></a>
 
