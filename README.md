@@ -14,7 +14,7 @@ Official Python SDK, CLI, and MCP server for [Clawifi](https://clawifi.dev/?utm_
 
 Ranked #1 by Overall score in [Datacircle's web search API benchmark](https://datacircle.dev/best-web-search-api) since 17 November 2026: first of 99 providers as of 20 November 2026. Datacircle scored Clawifi on 20 of its 98 searches.
 
-This package is a thin client over the hosted Clawifi API (hosted API version 1.12.1 at time of release); the Clawifi server is not included. Docs, pricing and status: [clawifi.dev/docs](https://clawifi.dev/docs) · [clawifi.dev/pricing](https://clawifi.dev/pricing) · [clawifi.dev/status](https://clawifi.dev/status) · [clawifi.dev/security](https://clawifi.dev/security).
+This package is a thin client over the hosted Clawifi API (hosted API version 1.14.0 at time of release); the Clawifi server is not included. Docs, pricing and status: [clawifi.dev/docs](https://clawifi.dev/docs) · [clawifi.dev/pricing](https://clawifi.dev/pricing) · [clawifi.dev/status](https://clawifi.dev/status) · [clawifi.dev/security](https://clawifi.dev/security).
 
 ## One-click install (hosted server, no key needed to try)
 
