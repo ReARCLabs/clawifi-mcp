@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.atakanelik34/clawifi-mcp",
   "title": "Clawifi",
-  "description": "Agent-native internet gateway: typed search, fetch, scrape, crawl, and extract via the Clawifi API.",
-  "version": "0.4.2",
+  "description": "Web search and page reading for AI agents: search, fetch, scrape, map and crawl, with sources.",
+  "version": "0.4.3",
   "websiteUrl": "https://clawifi.dev",
   "repository": {
     "source": "github",
@@ -13,7 +13,7 @@
     {
       "registryType": "pypi",
       "identifier": "clawifi",
-      "version": "0.4.2",
+      "version": "0.4.3",
       "transport": {
         "type": "stdio"
       },

@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.4.3 (2026-11-20)
+
+Gemini CLI extension. No SDK, CLI or MCP behaviour change.
+
+- `gemini-extension.json` and `GEMINI.md` at the repo root, so `gemini extensions install https://github.com/ReARCLabs/clawifi-mcp` adds the hosted MCP server (`https://api.clawifi.dev/mcp`). The four keyless tools work at once; `/mcp auth clawifi` signs in for the rest.
+- README: the Gemini CLI install line.
+- `server.json` and the User-Agent strings: 0.4.3.
+- Package and registry description now say what Clawifi is: web search and page reading for AI agents (was "agent-native internet gateway"). README: hosted API version 1.14.0.
+
 ## 0.4.2 (2026-11-20)
 
 For hosted API 1.12.1. Dependency floor only, no SDK, CLI or MCP behaviour change.

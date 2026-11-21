@@ -1,7 +1,7 @@
 [project]
 name = "clawifi"
-version = "0.4.2"
-description = "Official Python SDK, CLI, and MCP server for Clawifi, the agent-native internet gateway."
+version = "0.4.3"
+description = "Official Python SDK, CLI, and MCP server for Clawifi: web search and page reading for AI agents."
 readme = "README.md"
 requires-python = ">=3.11"
 license = "MIT"
