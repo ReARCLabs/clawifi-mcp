@@ -1,6 +1,6 @@
 {
   "name": "clawifi",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "description": "Web search and page reading for AI agents: search many engines as one, read pages and PDFs, and get back the passages that answer the question, each with its source.",
   "mcpServers": {
     "clawifi": {

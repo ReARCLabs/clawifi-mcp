@@ -3,7 +3,7 @@
   "name": "io.github.atakanelik34/clawifi-mcp",
   "title": "Clawifi",
   "description": "Web search and page reading for AI agents: search, fetch, scrape, map and crawl, with sources.",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "websiteUrl": "https://clawifi.dev",
   "repository": {
     "source": "github",
@@ -13,7 +13,7 @@
     {
       "registryType": "pypi",
       "identifier": "clawifi",
-      "version": "0.4.3",
+      "version": "0.4.4",
       "transport": {
         "type": "stdio"
       },

@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.4.4 (2026-11-22)
+
+Package metadata and README only. No SDK, CLI or MCP behaviour change.
+
+- README: "Free web search MCP server, no API key" section (the four keyless tools on the hosted server and their limits) and links to the Firecrawl, Tavily, Exa and Jina Reader comparison pages.
+- `pyproject.toml`: keywords, more classifiers, description mentions the keyless tier.
+- `server.json`, `gemini-extension.json` and the User-Agent strings: 0.4.4.
+
 ## 0.4.3 (2026-11-20)
 
 Gemini CLI extension. No SDK, CLI or MCP behaviour change.

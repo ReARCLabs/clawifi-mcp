@@ -16,6 +16,30 @@ Ranked #1 by Overall score in [Datacircle's web search API benchmark](https://da
 
 This package is a thin client over the hosted Clawifi API (hosted API version 1.14.0 at time of release); the Clawifi server is not included. Docs, pricing and status: [clawifi.dev/docs](https://clawifi.dev/docs) · [clawifi.dev/pricing](https://clawifi.dev/pricing) · [clawifi.dev/status](https://clawifi.dev/status) · [clawifi.dev/security](https://clawifi.dev/security).
 
+## Free web search MCP server, no API key
+
+The hosted MCP server at `https://api.clawifi.dev/mcp` works without an API key or sign-up. Four tools are open to everyone:
+
+| Tool | What it does |
+| --- | --- |
+| `search_free` | Web search across several engines at once, ranked results with source URLs |
+| `fetch_url` | Read a page or PDF as clean Markdown, or only the passages that answer a `query` |
+| `scrape_url` | Structured content from a URL |
+| `map_site` | List a site's URLs from robots.txt, sitemaps, feeds and links |
+
+Keyless calls are limited to 12 a minute and 50 a day per address. A free account (1,000 credits a month, no card) unlocks crawling, extraction, browser rendering, page monitoring and the rest of the tools.
+
+Use it to give Claude Code, Cursor, Codex, Claude Desktop, VS Code, Gemini CLI or any MCP client web search and page reading. Install lines are below.
+
+## Clawifi compared with Firecrawl, Tavily, Exa and Jina Reader
+
+Side-by-side pages with free tiers, credit costs, rate limits and features, each read from the other product's own pages:
+
+- [Firecrawl alternative: Clawifi vs Firecrawl](https://clawifi.dev/compare/firecrawl)
+- [Tavily alternative: Clawifi vs Tavily](https://clawifi.dev/compare/tavily)
+- [Exa alternative: Clawifi vs Exa](https://clawifi.dev/compare/exa)
+- [Jina Reader alternative: Clawifi vs Jina Reader](https://clawifi.dev/compare/jina-reader)
+
 ## One-click install (hosted server, no key needed to try)
 
 [![Add to Cursor](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en/install-mcp?name=clawifi&config=eyJ1cmwiOiJodHRwczovL2FwaS5jbGF3aWZpLmRldi9tY3AifQ%3D%3D)
