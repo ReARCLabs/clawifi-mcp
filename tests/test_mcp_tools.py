@@ -62,6 +62,7 @@ def test_version_is_the_same_everywhere():
     assert [package["version"] for package in server["packages"]] == [version]
     assert f'"clawifi/{version}"' in (root / "src/clawifi/client.py").read_text()
     assert f"clawifi-cli/{version} " in (root / "src/clawifi/cli.py").read_text()
+    assert f'CLI_VERSION = "{version}"' in (root / "src/clawifi/cli.py").read_text()
     assert re.search(rf"^## {re.escape(version)} ", (root / "CHANGELOG.md").read_text(), re.M)
 
 

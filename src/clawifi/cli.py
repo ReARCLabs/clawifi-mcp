@@ -10,6 +10,10 @@ from clawifi.mcp_setup import WRITABLE_CLIENTS, run_init
 
 
 DEFAULT_API_BASE = "https://api.clawifi.dev"
+CLI_VERSION = "0.4.5"
+# A sign-up from this CLI tells the API where it came from (the API keeps it with the new account, as it does for a
+# website sign-up that arrived through a campaign link). Slugs only: no email, machine or user data.
+SIGNUP_SOURCE = {"utm_source": "cli", "utm_medium": "cli", "utm_content": f"clawifi-{CLI_VERSION}"}
 
 
 def run(argv: list[str] | None = None) -> None:
@@ -136,7 +140,12 @@ def run(argv: list[str] | None = None) -> None:
         payload = _request(
             "POST",
             f"{api_base}/auth/signup",
-            json_body={"email": args.email, "password": args.password, "display_name": args.display_name},
+            json_body={
+                "email": args.email,
+                "password": args.password,
+                "display_name": args.display_name,
+                "utm": SIGNUP_SOURCE,
+            },
         )
         print("Clawifi account created.")
         print(f"Email: {payload['account']['email']}")
@@ -344,7 +353,7 @@ def _required_api_key() -> str:
 
 def _request(method: str, url: str, *, json_body: dict | None = None, token: str | None = None) -> dict:
     body = json.dumps(json_body or {}, separators=(",", ":")).encode("utf-8") if json_body is not None else None
-    headers = {"Content-Type": "application/json", "User-Agent": "clawifi-cli/0.4.4 (+https://clawifi.dev)"}
+    headers = {"Content-Type": "application/json", "User-Agent": "clawifi-cli/0.4.5 (+https://clawifi.dev)"}
     if token:
         headers["Authorization"] = f"Bearer {token}"
     request = urllib.request.Request(url, data=body, method=method, headers=headers)
