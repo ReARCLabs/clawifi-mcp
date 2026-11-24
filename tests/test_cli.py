@@ -249,3 +249,19 @@ def test_cli_default_api_base_is_clawifi_dev_and_the_old_host_still_works(monkey
     with pytest.raises(SystemExit):
         cli.run(["credits"])
     assert seen == ["https://api.clawifi.dev/billing/plans", "https://api.clawifi.qzz.io/billing/plans"]
+
+
+def test_signup_tells_the_api_it_came_from_the_cli(monkeypatch, capsys):
+    sent = {}
+
+    def fake_request(method, url, *, json_body=None, token=None):
+        sent.update(method=method, url=url, body=json_body)
+        return {"account": {"email": "a@example.com"}, "credits": {"available": 1000}, "requires_email_verification": True}
+
+    monkeypatch.setattr(cli, "_request", fake_request)
+    cli.run(["--api-base", "https://api.example", "signup", "--email", "a@example.com", "--password", "pw-123456"])
+    assert sent["url"] == "https://api.example/auth/signup"
+    assert sent["body"]["utm"] == {"utm_source": "cli", "utm_medium": "cli", "utm_content": f"clawifi-{cli.CLI_VERSION}"}
+    # only slugs travel as the source: nothing from the account or the machine
+    assert all(isinstance(v, str) and "@" not in v for v in sent["body"]["utm"].values())
+    assert "Email verification is required" in capsys.readouterr().out

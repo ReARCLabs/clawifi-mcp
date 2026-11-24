@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.4.5 (2026-11-24)
+
+The CLI sign-up says where it came from.
+
+- `clawifi signup` now sends `utm_source=cli`, `utm_medium=cli` and `utm_content=clawifi-<version>` with the sign-up, so the hosted API records the account as a CLI sign-up (the API has kept a sign-up's campaign since 1.14.0). Only these fixed values are sent; nothing about the account or the machine.
+- `server.json`, `gemini-extension.json` and the User-Agent strings: 0.4.5.
+
 ## 0.4.4 (2026-11-22)
 
 Package metadata and README only. No SDK, CLI or MCP behaviour change.
